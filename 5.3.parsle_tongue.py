@@ -1,4 +1,9 @@
 def parsle_tongue(filename):
+    """
+    This function takes file name that an image and return the secret message hide in the photo
+    :param filename : name of the file to be opened
+    :return: secret messages hiding in the image
+    """
     # Opening the binary file in binary mode as rb(read binary)
     with open(filename, mode='rb') as file:
         fileContent = file.read()
